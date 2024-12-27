@@ -1,16 +1,16 @@
-const { test } = require('@playwright/test');
+const {test} = require('@playwright/test');
 const {HomePage} = require("../pages/HomePage");
 const {Constants, Categories, ApiList, TitleTexts} = require("../constants/Constants");
 const {ApiAutomation} = require("../utils/ApiAutomation");
 
 test.describe('Home Page', async () => {
     let homePage;
-    test.beforeEach('Initialize',async ({page}) => {
+    test.beforeEach('Initialize', async ({page}) => {
         homePage = new HomePage(page);
         await page.goto('https://automationexercise.com/');
     })
 
-    test('Verify API Documentation', async ({ playwright }) => {
+    test('Verify API Documentation', async ({playwright}) => {
         await homePage.clickApiListForPracticeBtn();
         await homePage.clickApiInList(ApiList.API_1_GET_ALL_PRODUCTS_LIST);
 
@@ -22,7 +22,7 @@ test.describe('Home Page', async () => {
 
         // Prepare post data if there are more than 3 products
         let postData;
-        if(otherApiProducts.length > 3) {
+        if (otherApiProducts.length > 3) {
             postData = {key: 'value'};
         }
 
