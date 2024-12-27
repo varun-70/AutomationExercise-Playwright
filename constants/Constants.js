@@ -6,16 +6,16 @@ const TitleTexts = Object.freeze({
 });
 
 const Categories = Object.freeze({
-    MEN: 'MEN',
-    MEN_TSHIRTS: 'TSHIRTS',
-    MEN_JEANS: 'JEANS',
-    WOMEN: 'WOMEN',
-    WOMEN_DRESS: 'DRESS',
-    WOMEN_TOP: 'TOP',
-    WOMEN_SAREE: 'SAREE',
-    KIDS: 'KIDS',
+    MEN: 'Men',
+    MEN_TSHIRTS: 'Tshirts',
+    MEN_JEANS: 'Jeans',
+    WOMEN: 'Women',
+    WOMEN_DRESS: 'Dress',
+    WOMEN_TOP: 'Top',
+    WOMEN_SAREE: 'Saree',
+    KIDS: 'Kids',
     KIDS_DRESS: 'DRESS',
-    KIDS_TOP_AND_SHIRTS: 'TOP & SHIRTS',
+    KIDS_TOP_AND_SHIRTS: 'Top & Shirts',
 });
 
 const Products = Object.freeze({
