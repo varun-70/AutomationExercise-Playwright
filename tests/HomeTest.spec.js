@@ -44,5 +44,6 @@ test.describe('Home Page', async () => {
         await homePage.clickCategoryItem(Categories.MEN);
         await homePage.clickCategoryItem(Categories.MEN, Categories.MEN_TSHIRTS);
         await homePage.assertTitleTextIsVisible(TitleTexts.MEN_TSHIRTS_TITLE_TEXT);
+        // TODO: Add Test
     })
 })
